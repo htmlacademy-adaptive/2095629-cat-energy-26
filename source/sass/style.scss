@@ -1,4 +1,20 @@
-// Начните писать стили здесь
-body {
-  background: red;
+// <<< Variables >>>
+@import "./global/variables.scss";
+
+// <<< Fonts >>>
+@import "./global/fonts.scss";
+
+//  <<< Blocks >>>
+@import "./blocks/page-body.scss";
+@import "./blocks/page-header.scss";
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
