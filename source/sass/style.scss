@@ -1,1 +1,99 @@
-// Начните писать стили здесь
+// <<< Global >>>
+@import "./global/variables.scss";
+@import "./blocks/visually-hidden.scss";
+@import "./global/fonts.scss";
+
+
+//  <<< Blocks >>>
+//      << Body >>
+@import "./blocks/button.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/page-body.scss";
+
+// --------- << HEADER >> ---------\
+@import "./blocks/page-header.scss";
+@import "./blocks/header-logo.scss";
+@import "./blocks/main-navigation.scss";
+
+
+//      << Main >>  \
+@import "./blocks/main.scss";
+
+
+//   Home page < PROMO >  \
+@import "./blocks/promo.scss";
+@import "./blocks/promo-image.scss";
+
+
+//   Home page < Main Services >  \
+@import "./blocks/main-services.scss";
+@import "./blocks/service-card.scss";
+
+
+//   Home page < Main Explanations >  \
+@import "./blocks/main-explanations.scss";
+@import "./blocks/explanation.scss";
+@import "./blocks/explanation-image.scss";
+
+
+//   Home page < Main Example >  \
+@import "./blocks/main-example.scss";
+@import "./blocks/statistics.scss";
+@import "./blocks/statistics-result.scss";
+@import "./blocks/statistics-price.scss";
+@import "./blocks/example-slider.scss";
+@import "./blocks/range.scss";
+@import "./blocks/range-bar.scss";
+
+
+//   Catalog list < Catalog> \
+@import "./blocks/catalog.scss";
+@import "./blocks/product-card.scss";
+@import "./blocks/description.scss";
+
+//   Catalog list < Catalog Addition > \
+@import "./blocks/gift.scss";
+
+
+//   Form < Form> \
+@import "./blocks/main-header.scss";
+@import "./blocks/application-form.scss";
+
+
+//   Form < Select Program >
+@import "./blocks/program-selection.scss";
+@import "./blocks/input-field.scss";
+@import "./blocks/input.scss";
+@import "./blocks/radio-buttons.scss";
+@import "./blocks/control.scss";
+
+
+//   Form < Contact Details >
+@import "./blocks/contact-details.scss";
+
+
+//   Form < Comment >
+@import "./blocks/comment.scss";
+@import "./blocks/textarea.scss";
+
+
+//   Form < Field Addition >
+@import "./blocks/addition.scss";
+@import "./blocks/checkbox-buttons.scss";
+
+// --------- << FOOTER >> ---------\
+@import "./blocks/page-footer.scss";
+
+//       Main Contacts       \
+@import "./blocks/main-contacts.scss";
+@import "./blocks/address.scss";
+@import "./blocks/address-name.scss";
+//       Main Contacts       /
+
+//       Social       \
+@import "./blocks/social.scss";
+@import "./blocks/social-link.scss";
+//       Social       /
+
+@import "./blocks/copyright.scss";
+// --------- << FOOTER >> ---------/
