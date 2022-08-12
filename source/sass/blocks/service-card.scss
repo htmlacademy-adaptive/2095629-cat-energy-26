@@ -1,4 +1,20 @@
 
 .service-card {
   background-color: $bgGrayColor;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 18px;
+  width: 280px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 77px;
+    padding-left: 53px;
+    padding-bottom: 53px;
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
