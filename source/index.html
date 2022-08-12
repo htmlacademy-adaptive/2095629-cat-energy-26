@@ -14,26 +14,27 @@
 
   <!-- Header -->
   <header class="page-header">
-    <!-- Меняется за счёт модификаторов  -->
-    <a class="page-header__logo header-logo header-logo--mobile" href="index.html">
-      <img src="./img/logo.svg" width="101" height="18" alt="CAT ENERGY">
-    </a>
-    <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-navigation__list">
-        <li class="main-navigation__item main-navigation__item--current">
-          <a class="main-navigation__link">Главная</a>
-        </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="form.html">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="page-header__container">
+      <a class="page-header__logo" href="index.html">
+        <img src="./img/logo.svg" width="101" height="18" alt="CAT ENERGY">
+      </a>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item main-navigation__item--current">
+            <a class="main-navigation__link">Главная</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- Main -->
@@ -128,13 +129,9 @@
           </div>
           <div class="main-example__range range">
             <div class="range__scale">
-              <!-- Имеется модификатор, чтобы подписи было/стало потеряли бордер снизу на мобильной версиии -->
-              <span class="range__label">было</span>
-              <!-- range-bar по умолчанию не является switch-button, по умольчанию стандартному range-bar это ползунок -->
-              <div class="range__bar range-bar range-bar--switch-button">
+              <div class="range__bar range-bar">
                 <button class="range__toggle"></button>
               </div>
-              <span class="range__label">стало</span>
             </div>
           </div>
         </div>
