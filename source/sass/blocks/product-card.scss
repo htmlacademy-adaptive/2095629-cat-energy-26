@@ -1,1 +1,20 @@
 // Product card
+.product-card {
+  display: flex;
+  flex-direction: row;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &--show-more {
+    flex-direction: column;
+  }
+}
+
+.product-card__image {
+  margin-top: 33px;
+  margin-left: auto;
+  margin-right: auto;
+}

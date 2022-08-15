@@ -6,4 +6,16 @@
 
   color: $whiteColor;
   background-color: $greenColor;
+
+  &--product-order {
+    width: 280px;
+
+    @media (min-width: $tablet-width) {
+      width: 248px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 168px;
+    }
+  }
 }

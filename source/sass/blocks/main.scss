@@ -16,4 +16,27 @@
   @media (min-width: $desktop-width) {
     width: $desktop-width;
   }
+
+  // Catalog
+  &--catalog {
+    width: 280px;
+
+    @media (min-width: $tablet-width) {
+      width: 708px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1220px;
+    }
+  }
+}
+
+.main__title {
+  margin-top: 27px;
+  margin-bottom: 40px;
+
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
 }
