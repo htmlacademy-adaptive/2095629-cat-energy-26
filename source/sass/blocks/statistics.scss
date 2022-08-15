@@ -1,5 +1,49 @@
 // Statistics
 .statistics {
+  width: 280px;
 
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
 }
 
+.statistics__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.statistics__description {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: $basicGrayColor;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.statistics__result {
+  margin-bottom: 20px;
+}
+
+.statistics__prise {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+}

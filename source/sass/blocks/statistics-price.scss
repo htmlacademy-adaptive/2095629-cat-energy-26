@@ -1,1 +1,11 @@
 // Statistics price
+.statistics-price {
+  display: flex;
+  flex-direction: row;
+  width: 188px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    flex-direction: column;
+  }
+}
