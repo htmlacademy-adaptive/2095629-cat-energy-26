@@ -23,4 +23,13 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 71px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
+}
+
+.application-form__contact-details {
+  padding: 0;
+  margin-bottom: 24px;
 }

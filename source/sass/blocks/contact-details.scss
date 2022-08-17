@@ -1,5 +1,40 @@
 
-.contact-datails {
+.contact-details {
+  width: 280px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 635px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.contact-details__input-field:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contact-details__inputs {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 569px 572px;
+    gap: 78px;
+  }
+}
+
+.contact-details__label {
+  margin-bottom: 35px;
+}
+
+.contact-details__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
 }
