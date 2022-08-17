@@ -1,4 +1,12 @@
 // Description
 .description {
   width: 142px;
+
+  &--addition-product {
+    width: 288px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    vertical-align: baseline;
+  }
 }

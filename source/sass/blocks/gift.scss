@@ -1,5 +1,84 @@
 
 .gift {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
+.gift__wrapper {
+  width: 280px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-image: url("../img/gift/gift_cat-in-cate-case.jpg");
+  background-size: 280px 290px;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 507px;
+    padding-left: 77px;
+    padding-right: 124px;
+    height: 200px;
+    background-size: 708px 200px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 289px;
+    background-size: 245px 289px;
+    padding: 0;
+    flex-direction: column;
+    justify-content: start;
+  }
+}
+
+.gift__icon {
+  width: 78px;
+  height: 80px;
+  margin-top: 59px;
+  background-image: url("../img/gift/icon_gift.svg");
+  background-size: 78px 80px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 83px;
+    margin: 0;
+    background-size: 80px 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 56px;
+    width: 80px;
+    height: 83px;
+    background-size: 80px 83px;
+  }
+}
+
+.gift__text {
   color: $whiteColor;
-  background-color: rgba($greenColor, 0.85);
+  width: 161px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 48px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 47px;
+    text-align: center;
+  }
 }
