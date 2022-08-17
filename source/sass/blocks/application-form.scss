@@ -1,1 +1,26 @@
 // Application Form
+.application-form {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 58px;
+
+  @media (min-width: $tablet-width) {
+    width: 628px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin-bottom: 82px;
+  }
+}
+
+.application-form__program-selection {
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 71px;
+  }
+}

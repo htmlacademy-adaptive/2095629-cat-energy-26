@@ -13,27 +13,28 @@
 <body class="page-body">
 
   <!-- Header -->
-  <header class="page-header ">
-    <!-- Меняется за счёт модификаторов  -->
-    <a class="page-header__logo header-logo header-logo--mobile" href="index.html">
-      <img src="img/logo.svg" width="101" height="18" alt="CAT ENERGY">
-    </a>
-    <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-navigation__list">
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="index.html">Главная</a>
-        </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="main-navigation__item main-navigation__item--current">
-          <a class="main-navigation__link">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
+  <header class="page-header">
+    <div class="page-header__container">
+      <a class="page-header__logo" href="index.html">
+        <img src="./img/logo.svg" width="101" height="18" alt="CAT ENERGY">
+      </a>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-navigation__item main-navigation__item--current">
+            <a class="main-navigation__link">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- Main -->
@@ -41,9 +42,9 @@
 
     <div class="main__container">
       <!-- Main form header -->
-      <header class="main__header main-header main-header--form">
+      <header class="main__header main-header">
         <h1 class="main-header__title">Подбор программы</h1>
-        <p class="main-header__subtitle">Заполните анкету, и мы подберем
+        <p class="main-header__subtitle">Заполните анкету, и мы подберем<br>
           программу питания для вашего кота</p>
       </header>
 
