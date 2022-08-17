@@ -137,8 +137,8 @@
 
         <!-- Field addition -->
         <fieldset class="application-form__addition addition">
-          <legend class="addition__title">
-            <h3>Дополнительно</h3>
+          <legend class="addition__label">
+            <h3 class="addition__title">Дополнительно</h3>
           </legend>
           <div class="addition__checkbox-buttons checkbox-buttons">
             <ul class="checkbox-buttons__list">
@@ -170,11 +170,13 @@
           </div>
         </fieldset>
 
+        <div class="submit-block">
+          <button class="button button--form-submit" type="submit">
+            <span>отправить заявку</span>
+          </button>
+          <span class="application-form__required-fields"><sup>*</sup>— Обязательные поля</span>
+        </div>
 
-        <button class="button button--form-submit" type="submit">
-          <span>отправить заявку</span>
-        </button>
-        <span class="application-form__required-fields"><sup>*</sup>— Обязательные поля</span>
       </form>
     </div>
 
