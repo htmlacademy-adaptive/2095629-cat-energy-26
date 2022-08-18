@@ -1,1 +1,10 @@
 // Promo Hero
+.promo-hero {
+  width: 320px;
+  height: 302px;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

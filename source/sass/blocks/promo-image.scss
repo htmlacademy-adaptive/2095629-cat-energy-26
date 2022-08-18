@@ -1,1 +1,15 @@
 // Promo image
+.promo-image {
+  width: 280px;
+  height: 270px;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+  }
+}

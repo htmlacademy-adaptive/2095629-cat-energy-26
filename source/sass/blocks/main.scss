@@ -1,1 +1,63 @@
 // Main
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__container {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+
+
+  // Catalog
+  &--catalog {
+    width: 280px;
+
+    @media (min-width: $tablet-width) {
+      width: 708px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1220px;
+    }
+  }
+}
+
+.main__gift {
+  margin-top: 35px;
+  margin-bottom: 62px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.main__header {
+  margin-top: 27px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 74px;
+  }
+}
+
+.main__form {
+  margin-left: auto;
+  margin-right: auto;
+}

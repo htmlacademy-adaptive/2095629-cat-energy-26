@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -12,27 +13,28 @@
 <body class="page-body">
 
   <!-- Header -->
-  <header class="page-header ">
-    <!-- Меняется за счёт модификаторов  -->
-    <a class="page-header__logo header-logo header-logo--mobile" href="index.html">
-      <img src="img/logo.svg" width="101" height="18" alt="CAT ENERGY">
-    </a>
-    <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-navigation__list">
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="index.html">Главная</a>
-        </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="main-navigation__item main-navigation__item--current">
-          <a class="main-navigation__link">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
+  <header class="page-header">
+    <div class="page-header__container">
+      <a class="page-header__logo" href="index.html">
+        <img src="./img/logo.svg" width="101" height="18" alt="CAT ENERGY">
+      </a>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-navigation__item main-navigation__item--current">
+            <a class="main-navigation__link">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- Main -->
@@ -40,9 +42,9 @@
 
     <div class="main__container">
       <!-- Main form header -->
-      <header class="main__header main-header main-header--form">
+      <header class="main__header main-header">
         <h1 class="main-header__title">Подбор программы</h1>
-        <p class="main-header__subtitle">Заполните анкету, и мы подберем
+        <p class="main-header__subtitle">Заполните анкету, и мы подберем<br>
           программу питания для вашего кота</p>
       </header>
 
@@ -103,8 +105,8 @@
 
         <!-- Contact details -->
         <fieldset class="application-form__contact-details contact-details">
-          <legend class="contact-details__title">
-            <h3>Контактные данные (владельца кота)</h3>
+          <legend class="contact-details__label">
+            <h3 class="contact-details__title">Контактные данные (владельца кота)</h3>
           </legend>
           <div class="contact-details__inputs">
             <label class="contact-details__input-field input-field">
@@ -135,8 +137,8 @@
 
         <!-- Field addition -->
         <fieldset class="application-form__addition addition">
-          <legend class="addition__title">
-            <h3>Дополнительно</h3>
+          <legend class="addition__label">
+            <h3 class="addition__title">Дополнительно</h3>
           </legend>
           <div class="addition__checkbox-buttons checkbox-buttons">
             <ul class="checkbox-buttons__list">
@@ -168,11 +170,13 @@
           </div>
         </fieldset>
 
+        <div class="submit-block">
+          <button class="button button--form-submit" type="submit">
+            <span>отправить заявку</span>
+          </button>
+          <span class="application-form__required-fields"><sup>*</sup>— Обязательные поля</span>
+        </div>
 
-        <button class="button button--form-submit" type="submit">
-          <span>отправить заявку</span>
-        </button>
-        <span class="application-form__required-fields"><sup>*</sup>— Обязательные поля</span>
       </form>
     </div>
 

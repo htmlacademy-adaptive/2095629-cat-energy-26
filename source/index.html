@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -13,26 +14,27 @@
 
   <!-- Header -->
   <header class="page-header">
-    <!-- Меняется за счёт модификаторов  -->
-    <a class="page-header__logo header-logo header-logo--mobile" href="index.html">
-      <img src="./img/logo.svg" width="101" height="18" alt="CAT ENERGY">
-    </a>
-    <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-navigation__list">
-        <li class="main-navigation__item main-navigation__item--current">
-          <a class="main-navigation__link">Главная</a>
-        </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="form.html">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="page-header__container">
+      <a class="page-header__logo" href="index.html">
+        <img src="./img/logo.svg" width="101" height="18" alt="CAT ENERGY">
+      </a>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item main-navigation__item--current">
+            <a class="main-navigation__link">Главная</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- Main -->
@@ -44,11 +46,13 @@
 
       <!-- Section Promo -->
       <section class="promo">
-        <img class="promo__hero promo-hero" src="img/promo/promo-cat.jpg" alt="Кот облизывает свои усы">
-        <h2 class="promo__title">Функциональное питание для котов</h2>
-        <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <a class="button" href="form.html">подобрать программу</a>
-        <img class="promo__image promo-image" src="./img/promo/energy-chicken-500.png" alt="Cat Energy chicken 500g">
+        <div class="promo__wrapper">
+          <h2 class="promo__title">Функциональное питание для котов</h2>
+          <p class="promo__slogan">Занялся собой? Займись котом!</p>
+          <img class="promo__image promo-image" src="./img/promo/energy-chicken-500.png" width="280" height="270" alt="Cat Energy chicken 500g">
+          <a class="promo__button button" href="form.html">подобрать программу</a>
+        </div>
+
       </section>
 
       <!-- Main SERVICES -->
@@ -108,12 +112,16 @@
           <p class="statistics__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
             Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
             спит по 16 часов в день. </p>
-          <dl class="statistics__result statistics-result">
-            <dt class="statistics-result__name">снижение веса</dt>
-            <dd class="statistics-result__value">5 КГ</dd>
-            <dt class="statistics-result__name">затрачено времени</dt>
-            <dd class="statistics-result__value">60 ДНЕЙ</dd>
-          </dl>
+          <ul class="statistics__result statistics-result">
+            <li class="statistics-result__module">
+              <span class="statistics-result__value">5 КГ</span>
+              <span class="statistics-result__name">снижение веса</span>
+            </li>
+            <li class="statistics-result__module">
+              <span class="statistics-result__value">60 ДНЕЙ</span>
+              <span class="statistics-result__name">затрачено времени</span>
+            </li>
+          </ul>
           <dl class="statistics__prise statistics-price">
             <dt class="statistics-price__name">Затраты на питание: </dt>
             <dd class="statistics-price__value">15 000 РУБ.</dd>
@@ -121,19 +129,15 @@
         </div>
         <div class="main-example__slider example-slider">
           <div class="example-slider__images">
-            <img class="example-slider__image" src="./img/example-slider/cat-fat.png" alt="Как кот выглядел до">
-            <img class="example-slider__image visually-hidden" src="./img/example-slider/cat-skinny.png"
+            <img class="example-slider__image" width="280" height="256" src="./img/example-slider/cat-fat.png" alt="Как кот выглядел до">
+            <img class="example-slider__image visually-hidden" width="280" height="256" src="./img/example-slider/cat-skinny.png"
               alt="Как кот стал выглядить после">
           </div>
           <div class="main-example__range range">
             <div class="range__scale">
-              <!-- Имеется модификатор, чтобы подписи было/стало потеряли бордер снизу на мобильной версиии -->
-              <span class="range__label">было</span>
-              <!-- range-bar по умолчанию не является switch-button, по умольчанию стандартному range-bar это ползунок -->
-              <div class="range__bar range-bar range-bar--switch-button">
+              <div class="range__bar range-bar">
                 <button class="range__toggle"></button>
               </div>
-              <span class="range__label">стало</span>
             </div>
           </div>
         </div>

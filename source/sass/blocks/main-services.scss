@@ -1,1 +1,32 @@
 // Main Sertvices
+.main-services {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin-bottom: 71px;
+  }
+}
+
+.main-services__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  display: grid;
+  gap: 20px;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 570px 570px;
+    column-gap: 80px;
+    row-gap: 40px;
+  }
+}

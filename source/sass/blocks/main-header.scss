@@ -1,1 +1,30 @@
 // Main Header
+.main-header {
+  width: 280px;
+  color: $blackColor;
+
+  @media (min-width: $tablet-width) {
+    width: 628px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.main-header__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 37px;
+}
+
+.main-header__subtitle {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}

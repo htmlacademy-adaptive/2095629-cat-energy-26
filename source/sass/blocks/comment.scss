@@ -1,1 +1,15 @@
 // Comment
+.comment {
+  border: none;
+  margin-left: 0;
+  margin-right: 0;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 628px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}

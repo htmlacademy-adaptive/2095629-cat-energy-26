@@ -7,3 +7,22 @@
   text-transform: uppercase;
   color: $blackColor;
 }
+
+.checkbox-buttons__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 221px 221px;
+    row-gap: 32px;
+    column-gap: 123px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 221px 221px 221px 221px;
+    column-gap: 104px;
+    row-gap: 32px;
+  }
+}
