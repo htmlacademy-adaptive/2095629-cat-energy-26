@@ -35,13 +35,16 @@
 }
 
 .page-header__logo {
-  height: 18px;
+  box-sizing: border-box;
+  height: 38px;
   width: 190px;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  display: inline-block;
-  text-align: end;
-
+  margin-top: 10px;
+  margin-bottom: 17px;
+  padding-top: 13px;
+  padding-left: 90px;
+  padding-bottom: 7px;
+  background-image: url("../img/logos/icon-logo-mobile.svg");
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     height: 52px;
@@ -54,4 +57,13 @@
     height: 59px;
     margin-top: 20px;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
+

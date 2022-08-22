@@ -1,1 +1,78 @@
 // <<< Main Navigation >>>
+.main-navigation {
+  position: relative;
+}
+
+.main-navigation__toggle {
+  position: absolute;
+  display: block;
+  width: 26px;
+  height: 16px;
+  top: -42px;
+  right: 0;
+  background-color: inherit;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+.main-navigation--closed .main-navigation__toggle {
+  background-image: url("../img/burger-menu/burger-menu-open.svg");
+  background-size: 26px 16px;
+}
+
+.main-navigation--opened .main-navigation__toggle {
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 3px;
+    z-index: 10;
+    width: 18px;
+    height: 2px;
+    background-color: $blackColor;
+  }
+
+  &::after {
+    rotate: 45deg;
+  }
+
+  &::before {
+    rotate: -45deg;
+  }
+}
+
+.main-navigation__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  border-top: solid 1px #e6e6e6;
+}
+
+.main-navigation--closed .main-navigation__list {
+  display: none;
+}
+
+.main-navigation__item {
+  text-align: center;
+  height: 20px;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  border-bottom: solid 1px #e6e6e6;
+  background-color: $whiteColor;
+}
+
+.main-navigation__link {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: $blackColor;
+  text-decoration: none;
+  text-transform: uppercase;
+}
