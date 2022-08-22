@@ -9,12 +9,13 @@
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
     flex-direction: row;
+    margin-top: 53px;
   }
 }
 
@@ -25,6 +26,9 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    width: 708px;
+    margin-left: auto;
+    margin-right: auto;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -39,6 +43,7 @@
   height: 38px;
   width: 190px;
   margin-top: 10px;
+  margin-left: 20px;
   margin-bottom: 17px;
   padding-top: 13px;
   padding-left: 90px;
@@ -47,15 +52,20 @@
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
+    width: 174px;
     height: 52px;
-    margin-top: 20px;
-    width: 171px;
+    padding-top: 19px;
+    padding-left: 71px;
+    padding-bottom: 14px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 202px;
     height: 59px;
-    margin-top: 20px;
+    padding-top: 22px;
+    padding-left: 84px;
+    padding-bottom: 16px;
   }
 
   &:hover {
