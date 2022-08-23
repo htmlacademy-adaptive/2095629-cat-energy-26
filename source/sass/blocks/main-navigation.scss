@@ -60,6 +60,7 @@
   flex-direction: column;
   position: absolute;
   border-top: solid 1px #e6e6e6;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
