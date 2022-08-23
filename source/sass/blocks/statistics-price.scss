@@ -2,6 +2,7 @@
 .statistics-price {
   display: flex;
   flex-direction: row;
+  vertical-align: baseline;
   width: 188px;
 
   @media (min-width: $tablet-width) {
@@ -9,3 +10,16 @@
     flex-direction: column;
   }
 }
+
+.statistics-price__name,
+.statistics-price__value {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+  text-transform: uppercase;
+}
+
+.statistics-price__value {
+  margin-left: 3px;
+}
+
