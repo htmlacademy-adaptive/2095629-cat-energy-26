@@ -23,20 +23,14 @@
 }
 
 .explanation__description {
+  color: $basicGrayColor;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
   margin-top: auto;
   margin-bottom: auto;
 
   @media (min-width: $tablet-width) {
     margin-top: 31px;
-  }
-}
-
-.explanation__number {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: inline-block;
-    position: absolute;
-    left: 93px;
   }
 }
