@@ -6,6 +6,12 @@
   display: grid;
   grid-template-columns: 124px 124px;
   gap: 32px;
+
+  @media (min-width: $tablet-width) {
+    width: 366px;
+    grid-template-columns: 162px 162px;
+    gap: 42px;
+  }
 }
 
 .statistics-result__module {
@@ -13,6 +19,10 @@
   flex-direction: column;
   width: 124px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
 }
 
 .statistics-result__value {
@@ -26,6 +36,12 @@
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    font-size: 30px;
+    line-height: 1.23;
+  }
 }
 
 .statistics-result__name {
@@ -36,11 +52,22 @@
   margin-right: auto;
   margin-bottom: -8px;
   padding: 0 4px;
-  width: 79px;
+  max-width: 79px;
   text-align: center;
   color: $basicGrayColor;
   background-color: #eaeaea;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 1;
+
+  @media (min-width: $tablet-width) {
+    max-width: 142px;
+    width: auto;
+    background-color: $whiteColor;
+    font-size: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #eaeaea;
+  }
 }
