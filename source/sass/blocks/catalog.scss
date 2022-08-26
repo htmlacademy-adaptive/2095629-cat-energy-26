@@ -1,16 +1,26 @@
 // Catalog
+
 .catalog__products-list {
-  padding: 0;
+  box-sizing: border-box;
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0;
   list-style-type: none;
+  border-top: solid 1px #d9d9d9;
+  border-bottom: solid 1px #d9d9d9;
 
   @media (min-width: $tablet-width) {
     display: grid;
+    width: 708px;
+    padding: 0;
+    border: 0;
     grid-template-columns: 324px 324px;
     gap: 60px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1220px;
     grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
     row-gap: 63px;
@@ -33,16 +43,80 @@
 
 .catalog__product {
   margin-bottom: 25px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 324px;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-bottom: 39px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &:last-child {
+      border: solid 2px $bgGrayColor;
+      height: 430px;
+      margin-top: auto;
+    }
+
+    &:not(:last-child)::after {
+      position: absolute;
+      content: "";
+      width: 324px;
+      height: 430px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      background-color: $bgGrayColor;
+
+      @media (min-width: $desktop-width) {
+        width: 245px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    padding-left: 33px;
+    padding-right: 32px;
+  }
+}
+
+.catalog__product:not(:first-child) {
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -20px;
+    width: 320px;
+    height: 1px;
+    background-color: #d9d9d9;
+
+    @media (min-width: $tablet-width) {
+      @include visually-hidden();
+    }
+  }
 }
 
 .catalog__title {
   margin-top: 27px;
   margin-bottom: 40px;
-
+  margin-left: 20px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 82px;
+    font-size: 60px;
+  }
 
   &--addition {
     margin-top: 25px;

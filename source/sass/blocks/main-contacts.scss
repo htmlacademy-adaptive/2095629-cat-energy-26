@@ -43,8 +43,10 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    width: 160px;
     font-size: 20px;
     line-height: 1.3;
   }

@@ -20,10 +20,12 @@
 
   // Catalog
   &--catalog {
-    width: 280px;
+    width: 320px;
+    border-top: solid 1px #d9d9d9;
 
     @media (min-width: $tablet-width) {
       width: 708px;
+      border-top: 0;
     }
 
     @media (min-width: $desktop-width) {

@@ -6,7 +6,11 @@
   width: 280px;
   height: 40px;
   color: $whiteColor;
+  text-transform: uppercase;
   background-color: $greenColor;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
 
   &--main-services {
     height: 38px;
@@ -45,12 +49,39 @@
   &--product-order {
     @media (min-width: $tablet-width) {
       width: 248px;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 168px;
+      margin-left: 5px;
+    }
+
+    &:hover {
+      background-color: $greenHover;
+    }
+
+    &:active {
+      color: rgba($whiteColor, 0.3);
+    }
+  }
+
+  &--product-show-more {
+    font-size: 16px;
+    line-height: 1.25;
+    color: $basicGrayColor;
+    background-color: $bgGrayColor;
+
+    @media (min-width: $tablet-width) {
+      width: 248px;
     }
 
     @media (min-width: $desktop-width) {
       width: 168px;
     }
   }
+
 
   &--program-selection {
     font-size: 14px;
