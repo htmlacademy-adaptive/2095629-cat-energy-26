@@ -25,20 +25,6 @@
     column-gap: 80px;
     row-gap: 63px;
   }
-
-  &--addition {
-    width: 280px;
-    display: block;
-
-    @media (min-width: $tablet-width) {
-      width: 708px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 896px;
-      vertical-align: baseline;
-    }
-  }
 }
 
 .catalog__product {
@@ -117,18 +103,5 @@
     margin-bottom: 82px;
     font-size: 60px;
   }
-
-  &--addition {
-    margin-top: 25px;
-    margin-bottom: 36px;
-  }
 }
 
-.catalog__wrapper {
-  @media (min-width: $desktop-width) {
-    width: 1220px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
