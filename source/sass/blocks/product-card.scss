@@ -144,9 +144,13 @@
 .product-card__stats {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    margin-bottom: 25px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 13px;
