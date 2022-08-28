@@ -15,10 +15,19 @@
 .main-header__title {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    font-size: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .main-header__subtitle {
@@ -26,5 +35,10 @@
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.29;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }

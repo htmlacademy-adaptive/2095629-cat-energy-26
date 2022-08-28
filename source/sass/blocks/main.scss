@@ -17,9 +17,9 @@
     width: $desktop-width;
   }
 
-
   // Catalog
-  &--catalog {
+  &--catalog,
+  &--form {
     width: 320px;
     border-top: solid 1px #d9d9d9;
 
@@ -30,6 +30,12 @@
 
     @media (min-width: $desktop-width) {
       width: 1220px;
+    }
+  }
+
+  &--form {
+    @media (min-width: $tablet-width) and (max-width: $tablet-only) {
+      width: 632px;
     }
   }
 }
@@ -50,7 +56,7 @@
   margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 65px;
+    margin-top: 0;
     margin-bottom: 66px;
   }
 
