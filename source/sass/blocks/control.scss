@@ -12,11 +12,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 30px;
-  height: 30px;
   box-sizing: border-box;
   border: solid 1px #cdcdcd;
-  border-radius: 50%;
 
   &::before {
     content: none;
@@ -25,11 +22,31 @@
     left: 0;
     right: 0;
     bottom: 0;
-    margin: auto;
-    width: 14px;
-    height: 14px;
-    background-color: $greenColor;
+  }
+
+  &--radio {
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
+
+    &::before {
+      width: 14px;
+      height: 14px;
+      background-color: $greenColor;
+      border-radius: 50%;
+      margin: auto;
+    }
+  }
+
+  &--checkbox {
+    width: 40px;
+    height: 40px;
+
+    &::before {
+      background-image: url("../img/field-form/checkbox-tick.svg");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
   }
 
   &:hover {
@@ -46,7 +63,8 @@
 .control__input {
   @include visually-hidden;
 
-  &[type="radio"]:checked + .control__mark::before {
+  &[type="radio"]:checked + .control__mark--radio::before,
+  &[type="checkbox"]:checked + .control__mark--checkbox::before {
     content: "";
   }
 
