@@ -1,0 +1,32 @@
+@mixin line-title {
+  &::after {
+    position: absolute;
+    content: "";
+    left: calc(100% + 30px);
+    top: 50%;
+    width: 1000%;
+    height: 2px;
+    background-color: $greenColor;
+  }
+
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: "";
+      right: calc(100% + 37px);
+      top: 50%;
+      width: 1000%;
+      height: 2px;
+      background-color: $greenColor;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: calc(100% + 36px);
+    }
+  }
+}
+
+.line-title {
+  @include line-title;
+}

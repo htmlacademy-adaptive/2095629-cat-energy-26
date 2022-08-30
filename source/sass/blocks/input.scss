@@ -12,14 +12,29 @@
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.12;
   appearance: textfield;
+  background-position: calc(100% - 16px) 50%;
+  background-repeat: no-repeat;
 
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
     appearance: none;
     margin: 0;
+  }
+
+  &--email {
+    background-image: url("../img/field-form/icon_email.svg");
+  }
+
+  &--tel {
+    background-image: url("../img/field-form/icon-phone.svg");
+  }
+
+  &--error {
+    border-color: $error;
+    border-width: 2px;
   }
 
   &:hover {
@@ -34,10 +49,5 @@
     &::-moz-focus-inner {
       border: 0;
     }
-  }
-
-  &--error {
-    border-color: $error;
-    border-width: 2px;
   }
 }

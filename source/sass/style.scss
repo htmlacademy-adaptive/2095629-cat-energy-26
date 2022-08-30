@@ -1,9 +1,9 @@
 // <<< Global >>>
 @import "./global/variables.scss";
-@import "./blocks/visually-hidden.scss";
+@import "./mixin/visually-hidden.scss";
 @import "./global/fonts.scss";
 @import "./global/viewports.scss";
-
+@import "./mixin/line-title.scss";
 
 //  <<< Blocks >>>
 //      << Body >>
