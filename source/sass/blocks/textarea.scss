@@ -1,8 +1,35 @@
 
 .textarea {
+  display: block;
+  width: 280px;
+  box-sizing: border-box;
+  min-height: 150px;
+  padding: 9px 15px;
+  border: solid 1px #e7e7e7;
+
+  color: $basicGrayColor;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: $basicGrayColor;
+
+  &:focus {
+    outline: none;
+    border-color: $basicGrayColor;
+    border-width: 2px;
+    padding: 8px 14px;
+
+    &::-moz-focus-inner {
+      border: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 632px;
+    min-height: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }

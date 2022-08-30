@@ -1,6 +1,6 @@
 // Application Form
 .application-form {
-  width: 280px;
+  width: 320px;
   display: flex;
   flex-direction: column;
   margin-bottom: 58px;
@@ -40,10 +40,11 @@
 
 .application-form__comment {
   margin-bottom: 23px;
-  padding: 0;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
