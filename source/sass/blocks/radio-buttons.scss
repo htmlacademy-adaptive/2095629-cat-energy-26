@@ -22,3 +22,12 @@
   margin: 0;
   list-style-type: none;
 }
+
+.radio-buttons__item {
+  min-height: 30px;
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
