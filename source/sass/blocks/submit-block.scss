@@ -1,18 +1,33 @@
 .submit-block {
-  width: 280px;
+  max-width: 280px;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
-    width: 565px;
-    display: grid;
-    grid-template-columns: 280px 180px;
-    column-gap: 61px;
+    max-width: 565px;
+    flex-direction: row;
+    align-items: baseline;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    grid-template-columns: 568px 180px;
+    max-width: 1220px;
+  }
+}
+
+.submit-block__text {
+  display: inline-block;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 81px;
   }
 }

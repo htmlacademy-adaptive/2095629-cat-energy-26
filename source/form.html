@@ -62,7 +62,7 @@
             <li class="program-selection__inputs-item">
               <label class="program-selection__input-field input-field">
                 <span class="input-field__label">
-                  имя:<sup class="input-field__required-field">*</sup>
+                  имя:<sup class="application-form__required-field">*</sup>
                 </span>
                 <input class="input-field__input input" value="БАРСИК" type="text">
               </label>
@@ -70,7 +70,7 @@
             <li class="program-selection__inputs-item">
               <label class="program-selection__input-field input-field">
                 <span class="input-field__label">
-                  вес (кг):<sup class="input-field__required-field">*</sup>
+                  вес (кг):<sup class="application-form__required-field">*</sup>
                 </span>
                 <input class="input-field__input input" value="7" min="0.1" max="1000"
                 step="0.1" type="number">
@@ -122,13 +122,13 @@
           <div class="contact-details__inputs">
             <label class="contact-details__input-field input-field">
               <span class="input-field__label">
-                e-mail:<sup class="input-field__required-field">*</sup>
+                e-mail:<sup class="application-form__required-field">*</sup>
               </span>
               <input class="input-field__input input input--email" value="кuklachev@gmail.com" type="email">
             </label>
             <label class="contact-details__input-field input-field">
               <span class="input-field__label">
-                Телефон:<sup class="input-field__required-field">*</sup>
+                Телефон:<sup class="application-form__required-field">*</sup>
               </span>
               <input class="input-field__input input input--tel" value="8 (960) 900-60-90" type="tel">
             </label>
@@ -140,7 +140,7 @@
           <legend class="comment__label">
             <h3 class="comment__title">Комментарий</h3>
           </legend>
-          <label class="comment__input-field input-field__textarea">
+          <label class="comment__input-field">
             <textarea class="textarea">Расскажите обо всех повадках кота</textarea>
           </label>
         </fieldset>
@@ -186,9 +186,10 @@
 
         <div class="submit-block">
           <button class="button button--form-submit" type="submit">
-            <span>отправить заявку</span>
+            отправить заявку
           </button>
-          <span class="application-form__required-fields"><sup class="input-field__required-field">*</sup>— Обязательные поля</span>
+          <span class="submit-block__text">
+            <sup class="application-form__required-field">*</sup>— Обязательные поля</span>
         </div>
 
       </form>

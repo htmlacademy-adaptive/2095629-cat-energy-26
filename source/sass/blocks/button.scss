@@ -95,9 +95,12 @@
   &--form-submit {
     margin-bottom: 21px;
 
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+
     @media (min-width: $desktop-width) {
       width: 568px;
-      margin-bottom: 0;
     }
   }
 }
