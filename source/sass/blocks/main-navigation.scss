@@ -1,1 +1,161 @@
 // <<< Main Navigation >>>
+.main-navigation {
+  position: relative;
+}
+
+.main-navigation__toggle {
+  position: absolute;
+  display: block;
+  width: 26px;
+  height: 16px;
+  top: -42px;
+  right: 20px;
+  background-color: inherit;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-navigation--closed .main-navigation__toggle {
+  background-image: url("../img/burger-menu/burger-menu-open.svg");
+  background-size: 26px 16px;
+}
+
+.main-navigation--opened .main-navigation__toggle {
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 3px;
+    z-index: 10;
+    width: 18px;
+    height: 2px;
+    background-color: $blackColor;
+  }
+
+  &::after {
+    rotate: 45deg;
+  }
+
+  &::before {
+    rotate: -45deg;
+  }
+}
+
+.main-navigation--nojs .main-navigation__toggle {
+  display: none;
+}
+
+.main-navigation__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  border-top: solid 1px #e6e6e6;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    width: 440px;
+    flex-wrap: wrap;
+    border-top: none;
+    position: relative;
+    justify-content: space-between;
+  }
+}
+
+.main-navigation--closed .main-navigation__list {
+  @media (max-width: $mobile-only) {
+    display: none;
+  }
+}
+
+.main-navigation--nojs .main-navigation__list {
+  position: static;
+}
+
+.main-navigation__item {
+  text-align: center;
+  height: 20px;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  border-bottom: solid 1px #e6e6e6;
+  background-color: $whiteColor;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    height: 24px;
+    padding-top: 16px;
+    padding-bottom: 0;
+    background-color: inherit;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 30px;
+    padding-top: 22px;
+  }
+
+  &--current,
+  &--current-home {
+    &::after {
+      @media (min-width: $tablet-width) {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        bottom: -8px;
+        background-color: $greenColor;
+      }
+    }
+  }
+
+  &--current-home {
+    &::after {
+      @media (min-width: $desktop-width) {
+        background-color: $whiteColor;
+      }
+    }
+  }
+}
+
+
+.main-navigation__link {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 20px;
+  color: $blackColor;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &--light {
+    @media (min-width: $desktop-width) {
+      color: $whiteColor;
+    }
+  }
+}

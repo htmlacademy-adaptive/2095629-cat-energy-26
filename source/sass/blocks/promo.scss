@@ -3,14 +3,17 @@
   width: 320px;
   display: flex;
   flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    min-height: 696px;
+    margin-bottom: 82px;
   }
 }
 
@@ -22,7 +25,7 @@
   flex-direction: column;
   align-items: center;
 
-  background-image: url("../img/promo/promo_cat.jpg");
+  background-image: linear-gradient(rgba($greenColor, 0.85), rgba($greenColor, 0.85)), url("../img/promo/promo-cat-size-small.jpg");
   background-size: 320px 302px;
   background-repeat: no-repeat;
 
@@ -35,11 +38,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1330px;
+    box-sizing: border-box;
+    width: $desktop-width;
+    min-height: 696px;
     padding-top: 200px;
-    margin-top: -200px;
-    z-index: -1;
-    background-image: url("../img/promo/promo_cat.jpg");
+    padding-left: 110px;
+    margin-top: -180px;
+    background-image: linear-gradient(rgba($greenColor, 0.85), rgba($greenColor, 0.85)), url("../img/promo/promo-cat-size-big.jpg");
     background-size: 720px 696px;
     background-repeat: no-repeat;
     background-position-x: right;
@@ -48,6 +53,8 @@
 
 
 .promo__title {
+  margin-top: 27px;
+  margin-bottom: 25px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -56,23 +63,29 @@
   color: $whiteColor;
 
   @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 41px;
+    padding-left: 90px;
+    padding-right: 200px;
     color: $blackColor;
     font-size: 60px;
     line-height: 60px;
     text-align: start;
-    margin-left: 87px;
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 420px;
+    margin-top: 36px;
+    margin-bottom: 40px;
     color: $blackColor;
     font-size: 60px;
     line-height: 60px;
-    max-width: 420px;
-    margin-bottom: 40px;
   }
 }
 
 .promo__slogan {
+  margin-top: 0;
+  margin-bottom: 25px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -82,11 +95,12 @@
   height: 14px;
 
   @media (min-width: $tablet-width) {
+    height: 20px;
+    padding-left: 90px;
     color: $blackColor;
     font-size: 20px;
     line-height: 20px;
-    height: 20px;
-    margin-left: 90px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -96,14 +110,17 @@
 
 .promo__image {
   order: 3;
+  margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
     order: 4;
+    margin-left: 59px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    margin-left: 558px;
+    margin-left: 448px;
   }
 }
 
@@ -112,10 +129,14 @@
 
   @media (min-width: $tablet-width) {
     order: 3;
+    margin-left: 90px;
+    position: absolute;
+    top: 229px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 90px;
-    margin-bottom: 185px;
+    position: relative;
+    top: 0;
   }
 }

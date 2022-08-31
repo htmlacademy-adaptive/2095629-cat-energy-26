@@ -3,7 +3,55 @@
   display: inline-block;
   width: 60px;
   height: 60px;
-
+  position: relative;
   color: $whiteColor;
   background-color: $greenColor;
+
+  &--leaf::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    width: 31px;
+    height: 32px;
+    background-image: url("../img/explanations/icon_leaf.svg");
+    background-repeat: no-repeat;
+    background-size: 31px 32px;
+  }
+
+  &--tub::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 15px;
+    width: 29px;
+    height: 31px;
+    background-image: url("../img/explanations/icon_tub.svg");
+    background-repeat: no-repeat;
+    background-size: 29px 31px;
+  }
+
+  &--eat::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    width: 25px;
+    height: 30px;
+    background-image: url("../img/explanations/icon_eat.svg");
+    background-repeat: no-repeat;
+    background-size: 25px 30px;
+  }
+
+  &--alarm::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 14px;
+    width: 32px;
+    height: 33px;
+    background-image: url("../img/explanations/icon_alarm.svg");
+    background-repeat: no-repeat;
+    background-size: 32px 33px;
+  }
 }

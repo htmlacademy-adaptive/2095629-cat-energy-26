@@ -1,14 +1,77 @@
-
 .button {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   text-decoration: none;
-
+  box-sizing: border-box;
+  width: 280px;
+  height: 40px;
   color: $whiteColor;
+  text-transform: uppercase;
   background-color: $greenColor;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+
+  &--main-services {
+    height: 38px;
+    position: relative;
+    padding-top: 4px;
+    padding-right: 47px;
+    padding-bottom: 4px;
+    color: $blackColor;
+    background-color: inherit;
+    font-size: 16px;
+    line-height: 1;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      right: 8px;
+      width: 24px;
+      height: 12px;
+      background-image: url("../img/servises/icon-services-arrow.svg");
+      background-repeat: no-repeat;
+      background-size: 24px 12px;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 
   &--product-order {
-    width: 280px;
+    @media (min-width: $tablet-width) {
+      width: 248px;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 168px;
+      margin-left: 5px;
+    }
+
+    &:hover {
+      background-color: $greenHover;
+    }
+
+    &:active {
+      color: rgba($whiteColor, 0.3);
+    }
+  }
+
+  &--product-show-more {
+    font-size: 16px;
+    line-height: 1.25;
+    color: $basicGrayColor;
+    background-color: $bgGrayColor;
 
     @media (min-width: $tablet-width) {
       width: 248px;
@@ -19,14 +82,25 @@
     }
   }
 
+
+  &--program-selection {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   &--form-submit {
-    width: 280px;
-    height: 40px;
     margin-bottom: 21px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
 
     @media (min-width: $desktop-width) {
       width: 568px;
-      margin-bottom: 0;
     }
   }
 }

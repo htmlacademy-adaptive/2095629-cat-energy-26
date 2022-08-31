@@ -2,11 +2,80 @@
 .description {
   width: 142px;
 
+  @media (min-width: $tablet-width) {
+    width: 252px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 180px;
+  }
+
+  &--show-more {
+    color: $basicGrayColor;
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
   &--addition-product {
     width: 288px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     vertical-align: baseline;
+    color: $basicGrayColor;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 15px;
+
+    @media (min-width: $tablet-width) {
+      width: auto;
+      // margin-left: auto;
+    }
+  }
+}
+
+.description__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.description__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: $basicGrayColor;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+  &:not(:last-child) {
+    margin-bottom: 6px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 5px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    padding-bottom: 9px;
+    border-bottom: solid 1px #cdcdcd;
+  }
+}
+
+.description__price {
+  @media (min-width: $tablet-width) {
+    margin-left: 48px;
   }
 }

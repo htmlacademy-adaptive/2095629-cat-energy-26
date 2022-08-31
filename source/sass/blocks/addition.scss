@@ -1,21 +1,105 @@
 // Addition
-.addition {
+.addition__wrapper {
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 86px;
+  }
+}
+
+.addition__products-list {
   width: 280px;
-  border: none;
-  margin-left: 0;
-  margin-right: 0;
+  display: block;
+  padding: 0;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: solid 1px #cdcdcd;
+  border-bottom: solid 1px #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    border: solid 1px #cdcdcd;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    border-left: 0;
+    border-right: 0;
+    width: 896px;
+  }
+}
+
+.addition__product {
+  position: relative;
+
+  &:not(:first-child) {
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 280px;
+      height: 1px;
+      background-color: #cdcdcd;
+
+      @media (min-width: $tablet-width) {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    .button--product-order {
+      width: 632px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .button--product-order {
+      width: 244px;
+    }
+  }
 }
 
 .addition__label {
   margin-top: 0;
   padding: 0;
   margin-bottom: 34px;
+  border: 0;
 }
 
 .addition__title {
-  margin: 0;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 24px;
-  line-height: 26px;
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    margin-bottom: 80px;
+  }
+
+
+  &--catalog {
+    margin-left: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 30px;
+    }
+  }
+
+  &--form {
+    margin: 0;
+  }
+
+  @include line-title;
 }

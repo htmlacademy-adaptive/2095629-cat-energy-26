@@ -2,6 +2,7 @@
 .example-slider {
   width: 280px;
   height: 256px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 560px;
@@ -10,11 +11,34 @@
 }
 
 .example-slider__image {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
   width: 280px;
   height: 256px;
+  background-size: 280px 256px;
 
   @media (min-width: $tablet-width) {
     width: 560px;
     height: 512px;
+    background-size: 560px 512px;
   }
+
+  &--foreground {
+    margin-left: 50%;
+    width: 50%;
+    background-image: url("../img/example-slider/cat-skinny.png");
+    background-position: 90% 0;
+  }
+
+  &--background {
+    background-image: url("../img/example-slider/cat-fat.png");
+    width: 50%;
+  }
+}
+
+.example-slider__slider-button {
+  position: relative;
+  left: calc(50% - 20px);
 }

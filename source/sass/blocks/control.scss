@@ -1,5 +1,79 @@
-
 .control {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 46px;
   font-family: "Oswald", sans-serif;
   color: $secondaryGrayColor;
+  vertical-align: baseline;
+  cursor: pointer;
+}
+
+.control__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  border: solid 1px #cdcdcd;
+
+  &::before {
+    content: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &--radio {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    &::before {
+      width: 14px;
+      height: 14px;
+      background-color: $greenColor;
+      border-radius: 50%;
+      margin: auto;
+    }
+  }
+
+  &--checkbox {
+    width: 40px;
+    height: 40px;
+
+    &::before {
+      background-image: url("../img/field-form/checkbox-tick.svg");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:hover {
+    border-color: #bababa;
+  }
+}
+
+.control__label {
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.control__input {
+  @include visually-hidden;
+
+  &[type="radio"]:checked + .control__mark--radio::before,
+  &[type="checkbox"]:checked + .control__mark--checkbox::before {
+    content: "";
+  }
+
+  &:disabled + .control__mark {
+    opacity: 0.3;
+  }
+
+  &:disabled ~ .control__label {
+    color: rgba($secondaryGrayColor, 0.3);
+  }
 }

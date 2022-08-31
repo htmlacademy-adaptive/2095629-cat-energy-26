@@ -19,18 +19,66 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
 }
 
 .statistics__description {
+  width: 283px;
   margin-top: 0;
   margin-bottom: 20px;
   color: $basicGrayColor;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 702px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-bottom: 69px;
+  }
+}
+
+.statistics__position {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 99px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
 }
 
 .statistics__result {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .statistics__prise {
@@ -41,9 +89,11 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 0;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
+    margin-bottom: 0;
   }
 }

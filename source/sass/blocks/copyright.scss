@@ -1,1 +1,29 @@
 // Copyright
+.copyright {
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 34px;
+
+  color: $basicGrayColor;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+  }
+}
+
+.copyright__name {
+  margin-top: 6px;
+}
+
+.copyright img {
+  display: block;
+  border: none;
+  width: 27px;
+  height: 34px;
+}

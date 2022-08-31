@@ -2,10 +2,43 @@
 .statistics-price {
   display: flex;
   flex-direction: row;
+  vertical-align: baseline;
   width: 188px;
 
   @media (min-width: $tablet-width) {
     width: 174px;
     flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    width: auto;
+  }
+}
+
+.statistics-price__name,
+.statistics-price__value {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+
+.statistics-price__value {
+  margin-left: 3px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 9px;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-left: 63px;
   }
 }

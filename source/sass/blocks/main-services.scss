@@ -22,11 +22,19 @@
   list-style-type: none;
 
   display: grid;
-  gap: 20px;
+  row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 30px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 570px 570px;
     column-gap: 80px;
     row-gap: 40px;
   }
+}
+
+.main-services__item {
+  position: relative;
 }

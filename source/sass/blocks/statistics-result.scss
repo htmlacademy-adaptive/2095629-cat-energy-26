@@ -6,9 +6,68 @@
   display: grid;
   grid-template-columns: 124px 124px;
   gap: 32px;
+
+  @media (min-width: $tablet-width) {
+    width: 366px;
+    grid-template-columns: 162px 162px;
+    gap: 42px;
+  }
 }
 
 .statistics-result__module {
   display: flex;
   flex-direction: column;
+  width: 124px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
+}
+
+.statistics-result__value {
+  box-sizing: border-box;
+  width: 124px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border: solid 1px #cdcdcd;
+  border-radius: 3px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    font-size: 30px;
+    line-height: 1.23;
+  }
+}
+
+.statistics-result__name {
+  position: relative;
+  top: -8px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -8px;
+  padding: 0 4px;
+  max-width: 79px;
+  text-align: center;
+  color: $basicGrayColor;
+  background-color: #eaeaea;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 1;
+
+  @media (min-width: $tablet-width) {
+    max-width: 142px;
+    width: auto;
+    background-color: $whiteColor;
+    font-size: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #eaeaea;
+  }
 }
