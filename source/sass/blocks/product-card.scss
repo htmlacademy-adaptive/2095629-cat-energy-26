@@ -17,6 +17,7 @@
   }
 
   &--show-more {
+    display: flex;
     flex-direction: column;
     text-align: center;
 
@@ -89,7 +90,7 @@
   padding: 0 36px;
 
   &--thousand {
-    padding: 0 26px;
+    padding: 0 28px;
   }
 
   @media (min-width: $tablet-width) {
@@ -104,6 +105,7 @@
 
 
   &--show-more {
+    align-self: center;
     margin-bottom: 23px;
     cursor: pointer;
     width: 30px;
