@@ -28,13 +28,41 @@
   &--foreground {
     margin-left: 50%;
     width: 50%;
-    background-image: url("../img/example-slider/cat-skinny.png");
-    background-position: 90% 0;
+    background-image: url("../img/example-slider/mobile-only/cat-skinny@1x.png");
+    background-position: 100% 0;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/example-slider/cat-skinny@1x.png");
+    }
   }
 
   &--background {
-    background-image: url("../img/example-slider/cat-fat.png");
+    background-image: url("../img/example-slider/mobile-only/cat-fat@1x.png");
     width: 50%;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/example-slider/mobile-only/cat-fat@1x.png");
+    }
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .example-slider__image {
+    &--foreground {
+      background-image: url("../img/example-slider/mobile-only/cat-skinny@2x.png");
+
+      @media (min-width: $tablet-width) {
+        background-image: url("../img/example-slider/cat-skinny@2x.png");
+      }
+    }
+
+    &--background {
+      background-image: url("../img/example-slider/mobile-only/cat-fat@2x.png");
+
+      @media (min-width: $tablet-width) {
+        background-image: url("../img/example-slider/cat-fat@2x.png");
+      }
+    }
   }
 }
 
