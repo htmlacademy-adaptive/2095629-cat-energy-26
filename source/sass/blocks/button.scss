@@ -23,11 +23,7 @@
     font-size: 16px;
     line-height: 1;
     text-transform: uppercase;
-
-    @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 1.5;
-    }
+    vertical-align: baseline;
 
     &::after {
       content: "";
@@ -39,10 +35,27 @@
       background-image: url("../img/servises/icon-services-arrow.svg");
       background-repeat: no-repeat;
       background-size: 24px 12px;
+
+      @media (min-width: $tablet-width) {
+        top: 14px;
+      }
     }
+
+    &:hover::after {
+      width: 32px;
+      right: 0;
+      background-size: 32px 12px;
+      background-image: url("../img/servises/services-arrow-long.svg");
+    }
+
 
     &:active {
       opacity: 0.3;
+    }
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 1.5;
     }
   }
 
@@ -90,6 +103,14 @@
     text-transform: uppercase;
     padding-top: 10px;
     padding-bottom: 10px;
+
+    &:hover {
+      background-color: $greenHover;
+    }
+
+    &:active {
+      color: rgba($whiteColor, 0.3);
+    }
   }
 
   &--form-submit {

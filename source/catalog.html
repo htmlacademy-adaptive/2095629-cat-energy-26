@@ -385,7 +385,7 @@
   <!-- Footer -->
   <footer class="page-footer">
     <!-- Section contacts -->
-    <section class="main-contacts main-contacts--catalog">
+    <section class="main-contacts">
       <div class="main-contacts__container">
         <h2 class="main-contacts__title">приглашаем<br>к сотрудничеству<br>дилеров!</h2>
         <address class="main-contacts__address address">
@@ -411,17 +411,26 @@
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="page-footer__social social">
           <li class="social__item">
-            <a class="social__link social-link social-link--theme-vkontakte" href="#">
+            <a class="social__link social-link" href="#">
+              <svg class="social-link__icon" width="28" height="22">
+                <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
+              </svg>
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social-link social-link--theme-youtube" href="#">
+            <a class="social__link social-link" href="#">
+              <svg class="social-link__icon" width="28" height="22">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social-link social-link--theme-telegram" href="#">
+            <a class="social__link social-link" href="#">
+              <svg class="social-link__icon" width="28" height="22">
+                <use xlink:href="img/sprite.svg#icon-telegram"></use>
+              </svg>
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
@@ -430,7 +439,9 @@
       <li class="page-footer__item">
         <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__name">HTMLAcademy</span>
-          <img src="./img/footer/htmlacademy.svg" width="27" height="34" alt="Логотип HTMLAcademy">
+          <svg class="copyright__icon" width="27" height="34">
+            <use xlink:href="img/sprite.svg#copyright-htmlacademy"></use>
+          </svg>
         </a>
       </li>
     </ul>
