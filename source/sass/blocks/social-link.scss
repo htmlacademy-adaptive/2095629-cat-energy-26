@@ -3,18 +3,16 @@
   display: block;
   width: 28px;
   height: 22px;
-  background-size: 28px 22px;
-  background-repeat: no-repeat;
+}
 
-  &--theme-vkontakte {
-    background-image: url("../../img/footer/icon-vkontakte.svg");
+.social-link__icon {
+  color: #666666;
+
+  &:hover {
+    color: $greenColor;
   }
 
-  &--theme-youtube {
-    background-image: url("../../img/footer/icon-youtube.svg");
-  }
-
-  &--theme-telegram {
-    background-image: url("../../img/footer/icon-telegram.svg");
+  &:active {
+    color: rgba($greenColor, 0.3);
   }
 }

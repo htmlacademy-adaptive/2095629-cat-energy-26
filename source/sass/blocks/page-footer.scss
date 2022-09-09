@@ -57,6 +57,14 @@
     padding-top: 5px;
     padding-bottom: 0;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__social {
