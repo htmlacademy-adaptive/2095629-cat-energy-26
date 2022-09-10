@@ -2,11 +2,23 @@
 .slider-button {
   width: 40px;
   height: 256px;
-  background-image: url("../../img/example-slider/slider-button.svg");
-  background-size: 40px 256px;
+  cursor: pointer;
+
 
   @media (min-width: $tablet-width) {
     height: 512px;
-    background-size: 40px 512px;
+  }
+}
+
+.slider-button__icon {
+  height: inherit;
+  color: $darkGrayColor;
+
+  &:hover {
+    color: $greenColor;
+  }
+
+  &:active {
+    color: rgba($greenHover, 0.6);
   }
 }
