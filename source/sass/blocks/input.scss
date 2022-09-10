@@ -15,8 +15,6 @@
   font-size: 16px;
   line-height: 1.12;
   appearance: textfield;
-  background-position: calc(100% - 16px) 50%;
-  background-repeat: no-repeat;
 
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
@@ -24,17 +22,14 @@
     margin: 0;
   }
 
-  &--email {
-    background-image: url("../img/field-form/icon_email.svg");
-  }
-
-  &--tel {
-    background-image: url("../img/field-form/icon-phone.svg");
-  }
-
   &--error {
     border-color: $error;
     border-width: 2px;
+    padding-left: 15px;
+
+    ~ svg {
+      color: $error;
+    }
   }
 
   &:hover {
@@ -45,9 +40,18 @@
     outline: none;
     border-color: $basicGrayColor;
     border-width: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     &::-moz-focus-inner {
       border: 0;
+    }
+  }
+
+  &--email,
+  &--tel {
+    &:focus ~ .input-field__icon {
+      color: $greenColor;
     }
   }
 }

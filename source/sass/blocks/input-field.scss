@@ -1,6 +1,7 @@
 
 .input-field {
   display: flex;
+  position: relative;
   flex-direction: row;
   font-family: "Oswald", sans-serif;
   color: $basicGrayColor;
@@ -16,6 +17,7 @@
 .input-field__label {
   box-sizing: border-box;
   margin-top: auto;
+
   margin-right: 13px;
   margin-bottom: auto;
   white-space: nowrap;
@@ -30,5 +32,19 @@
 
   @media (min-width: deskot-width) {
     margin-right: 14px;
+  }
+}
+
+.input-field__icon {
+  position: absolute;
+  color: $secondaryGrayColor;
+  right: 16px;
+
+  &--email {
+    top: 16px;
+  }
+
+  &--tel {
+    top: 14px;
   }
 }

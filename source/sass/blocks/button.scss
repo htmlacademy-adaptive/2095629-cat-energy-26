@@ -93,6 +93,14 @@
     @media (min-width: $desktop-width) {
       width: 168px;
     }
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba($basicGrayColor, 0.3);
+    }
   }
 
 
@@ -122,6 +130,14 @@
 
     @media (min-width: $desktop-width) {
       width: 568px;
+    }
+
+    &:hover {
+      background-color: $greenHover;
+    }
+
+    &:active {
+      color: rgba($whiteColor, 0.3);
     }
   }
 }
