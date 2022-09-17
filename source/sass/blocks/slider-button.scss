@@ -4,6 +4,7 @@
   height: 256px;
   cursor: pointer;
 
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     height: 512px;
@@ -13,6 +14,11 @@
 .slider-button__icon {
   height: inherit;
   color: $darkGrayColor;
+  transform: scale(2);
+
+  @media (min-width: $tablet-width) {
+    transform: scale(1);
+  }
 
   &:hover {
     color: $greenColor;
