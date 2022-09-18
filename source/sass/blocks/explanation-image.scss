@@ -7,6 +7,11 @@
   color: $whiteColor;
   background-color: $greenColor;
 
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+
   &--leaf::after {
     content: "";
     position: absolute;
@@ -17,6 +22,11 @@
     background-image: url("../img/explanations/icon_leaf.svg");
     background-repeat: no-repeat;
     background-size: 31px 32px;
+
+    @media (min-width: $tablet-width) {
+      top: 25px;
+      left: 24px;
+    }
   }
 
   &--tub::after {
@@ -29,6 +39,11 @@
     background-image: url("../img/explanations/icon_tub.svg");
     background-repeat: no-repeat;
     background-size: 29px 31px;
+
+    @media (min-width: $tablet-width) {
+      top: 25px;
+      left: 25px;
+    }
   }
 
   &--eat::after {
@@ -41,6 +56,11 @@
     background-image: url("../img/explanations/icon_eat.svg");
     background-repeat: no-repeat;
     background-size: 25px 30px;
+
+    @media (min-width: $tablet-width) {
+      top: 25px;
+      left: 27px;
+    }
   }
 
   &--alarm::after {
@@ -53,5 +73,10 @@
     background-image: url("../img/explanations/icon_alarm.svg");
     background-repeat: no-repeat;
     background-size: 32px 33px;
+
+    @media (min-width: $tablet-width) {
+      top: 24px;
+      left: 24px;
+    }
   }
 }

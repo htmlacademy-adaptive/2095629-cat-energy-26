@@ -6,7 +6,7 @@
   margin-right: auto;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 47px;
+    margin-bottom: 6px;
     width: 708px;
   }
 
@@ -22,6 +22,12 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 1.11;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 71px;
+  }
 }
 
 .main-explanations__list {
@@ -38,7 +44,7 @@
     width: 633px;
     grid-template-columns: 250px 250px;
     row-gap: 37px;
-    column-gap: 137px;
+    column-gap: 134px;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,7 +62,7 @@
       content: counter(section);
       position: absolute;
       top: -40px;
-      right: 0;
+      left: 115px;
       color: $bgGrayColor;
       font-family: "Oswald", sans-serif;
       font-weight: 400;
