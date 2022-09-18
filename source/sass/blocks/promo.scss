@@ -111,7 +111,7 @@
 
 .promo__slogan {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 29px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -152,6 +152,7 @@
 
 .promo__button {
   order: 4;
+  margin-top: -7px;
 
   @media (min-width: $tablet-width) {
     order: 3;
