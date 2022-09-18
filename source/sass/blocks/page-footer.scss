@@ -28,10 +28,9 @@
     width: 708px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     background-color: $bgGrayColor;
     margin: 0;
-    padding: 55px 30px;
+    padding: 56px 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,11 +39,23 @@
   }
 }
 
-.page-footer__item:not(:first-child) {
-  border-top: solid 1px #d9d9d9;
+.page-footer__item {
+  &:not(:first-child) {
+    border-top: solid 1px #d9d9d9;
+
+    @media (min-width: $tablet-width) {
+      border-top: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    border-top: none;
+    &:nth-child(2) {
+      margin-left: 155px;
+    }
+
+    &:last-child {
+      margin-left: auto;
+    }
   }
 }
 
