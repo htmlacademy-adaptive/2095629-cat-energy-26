@@ -31,9 +31,9 @@
     content: "";
     position: absolute;
     top: 7px;
-    right: 3px;
+    right: 0;
     z-index: 10;
-    width: 18px;
+    width: 25px;
     height: 2px;
     background-color: $blackColor;
   }
@@ -86,7 +86,7 @@
   text-align: center;
   height: 20px;
   padding-top: 22px;
-  padding-bottom: 24px;
+  padding-bottom: 23px;
   border-bottom: solid 1px #e6e6e6;
   background-color: $whiteColor;
   position: relative;
