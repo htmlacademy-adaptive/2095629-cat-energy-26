@@ -32,8 +32,8 @@
           <li class="main-navigation__item">
             <a class="main-navigation__link" href="index.html">Главная</a>
           </li>
-          <li class="main-navigation__item main-navigation__item--current">
-            <a class="main-navigation__link">Каталог продукции</a>
+          <li class="main-navigation__item ">
+            <a class="main-navigation__link main-navigation__link--current">Каталог продукции</a>
           </li>
           <li class="main-navigation__item">
             <a class="main-navigation__link" href="form.html">Подбор программы</a>
@@ -293,18 +293,20 @@
             </button>
           </li>
           <!-- 8 product ==> more product -->
-          <li class="catalog__product ">
-            <div class="product-card product-card--show-more">
-              <img class="product-card__image product-card__image--show-more" src="./img/product/icon-show-more.svg"
-                width="30" height="30" alt="Показать допольнительные карточки товаров">
-              <h2 class="product-card__title">Показать еще 100500 товаров</h2>
-              <div class="product-card__description description description--show-more">
-                <p class="description__text">На самом деле вкусов гораздо больше!</p>
+          <li class="catalog__product catalog__product--more-product">
+            <div class="catalog__product-wrapper catalog__product-wrapper--more-products">
+              <div class="product-card product-card--show-more">
+                <img class="product-card__image product-card__image--show-more" src="./img/product/icon-show-more.svg"
+                  width="30" height="30" alt="Показать допольнительные карточки товаров">
+                <h2 class="product-card__title">Показать еще 100500 товаров</h2>
+                <div class="product-card__description description description--show-more">
+                  <p class="description__text">На самом деле вкусов гораздо больше!</p>
+                </div>
               </div>
+              <button class="button button--product-show-more" type="button">
+                <span>показать все</span>
+              </button>
             </div>
-            <button class="button button--product-show-more" type="button">
-              <span>показать все</span>
-            </button>
           </li>
         </ul>
       </section>

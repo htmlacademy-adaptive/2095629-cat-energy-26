@@ -95,6 +95,7 @@
     background-color: $bgGrayColor;
 
     @media (min-width: $tablet-width) {
+      margin-top: 64px;
       width: 248px;
     }
 

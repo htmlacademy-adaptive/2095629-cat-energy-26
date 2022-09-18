@@ -7,7 +7,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 33px;
+
+    picture {
+      display: block;
+      height: 210px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -15,36 +19,52 @@
   }
 
   &--show-more {
-    padding-top: 25px;
+    padding-top: 24px;
     display: flex;
     flex-direction: column;
     text-align: center;
 
-    @media (min-width: $tablet-width) {
-      padding: 0;
-      margin-bottom: 70px;
-    }
-
     .product-card__title {
+      margin-top: 24px;
+      margin-bottom: 7px;
       width: auto;
       color: #111111;
-      margin-top: 23px;
-      margin-bottom: 0;
-
-
-      @media (min-width: $tablet-width) {
-        line-height: 1.1;
-        width: 134px;
-        margin-bottom: 23px;
-      }
     }
 
     .product-card__description {
-      @media (min-width: $tablet-width) {
-        width: 180px;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      margin-left: auto;
+      margin-right: auto;
+
+      .product-card__title {
+        margin-top: 47px;
+        margin-bottom: 21px;
+      }
+
+      .product-card__description {
+        margin-left: -23px;
+        margin-bottom: 0;
+        width: 184px;
       }
     }
+
+    @media (min-width: $tablet-width) {
+      line-height: 1.1;
+      width: 134px;
+      margin-bottom: 23px;
+    }
   }
+
+  // .product-card__description {
+  //   @media (min-width: $tablet-width) {
+  //     width: 180px;
+  //   }
+  // }
+
 
   &--addition-product {
     box-sizing: border-box;
@@ -97,12 +117,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 34px;
+    margin-top: 36px;
     width: 161px;
-    height: auto;
+    height: 172px;
 
     &--thousand {
+      margin-top: 9px;
       width: 168px;
+      height: 206px;
     }
   }
 
@@ -117,7 +139,7 @@
     @media (min-width: $tablet-width) {
       width: 60px;
       height: 60px;
-      margin-bottom: 49px;
+      padding-left: 39px;
     }
   }
 }
@@ -143,6 +165,7 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
+    margin-top: 32px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 21px;

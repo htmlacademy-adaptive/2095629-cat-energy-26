@@ -18,6 +18,10 @@
     margin-left: auto;
     margin-right: auto;
 
+    .description__text {
+      margin: 0;
+    }
+
     @media (min-width: $tablet-width) {
       font-size: 16px;
       line-height: 18px;
@@ -46,6 +50,10 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .description__item {
@@ -58,12 +66,6 @@
   font-size: 12px;
   line-height: 16px;
 
-  &:not(:last-child) {
-    @media (min-width: $tablet-width) {
-      margin-bottom: 5px;
-    }
-  }
-
   &:first-child {
     .description__value {
       padding-right: 5px;
@@ -72,8 +74,12 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    padding-bottom: 9px;
+    padding-bottom: 8px;
     border-bottom: solid 1px #cdcdcd;
+
+    &:not(:last-child) {
+      margin-bottom: 7px;
+    }
   }
 }
 
