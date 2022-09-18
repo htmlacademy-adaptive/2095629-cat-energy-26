@@ -3,7 +3,7 @@
   width: 280px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -22,7 +22,7 @@
   list-style-type: none;
 
   display: grid;
-  row-gap: 20px;
+  row-gap: 18px;
 
   @media (min-width: $tablet-width) {
     row-gap: 30px;
