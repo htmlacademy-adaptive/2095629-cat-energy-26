@@ -58,6 +58,10 @@
       line-height: 1.5;
       padding-right: 58px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 60px;
+    }
   }
 
   &--product-order {
