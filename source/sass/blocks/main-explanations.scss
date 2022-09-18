@@ -12,6 +12,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    margin-bottom: 30px;
   }
 }
 
@@ -50,7 +51,7 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     grid-template-columns: repeat(4, 250px);
-    column-gap: calc((1220px - (4 * 250px)) / 3);
+    column-gap: 75px;
   }
 }
 
