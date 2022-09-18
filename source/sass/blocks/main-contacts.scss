@@ -30,9 +30,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 405px;
-    padding: 56px 80px;
-    min-height: 86px;
+    box-sizing: border-box;
+    width: 565px;
+    padding-top: 56px;
+    padding-left: 77px;
+    padding-right: 76px;
+    padding-bottom: 56px;
+    min-height: 198px;
     position: absolute;
     background-color: $whiteColor;
     top: 96px;

@@ -35,7 +35,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    padding: 57px 110px;
+    padding: 59px 110px 57px;
   }
 }
 
@@ -49,10 +49,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    &:nth-child(2) {
-      margin-left: 155px;
-    }
-
     &:last-child {
       margin-left: auto;
     }
@@ -68,6 +64,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 5px;
     padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 4px;
   }
 
   &:hover {
@@ -90,6 +90,12 @@
     padding-top: 6px;
     padding-bottom: 0;
     margin: 0;
+    margin-left: 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 413px;
+    padding-top: 3px;
   }
 }
 
