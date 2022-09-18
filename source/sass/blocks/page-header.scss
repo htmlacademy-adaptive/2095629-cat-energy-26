@@ -71,6 +71,17 @@
     background-image: url("../img/logos/icon-logo-desktop.svg");
   }
 
+  img {
+    width: 101px;
+    height: 18px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: -1px;
+      width: 104px;
+      height: 20px;
+    }
+  }
+
   &:hover {
     opacity: 0.8;
   }
