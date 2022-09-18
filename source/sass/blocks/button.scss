@@ -65,6 +65,9 @@
   }
 
   &--product-order {
+    font-size: 16px;
+    line-height: 1.25;
+
     @media (min-width: $tablet-width) {
       width: 248px;
       font-size: 16px;

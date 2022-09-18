@@ -1,6 +1,6 @@
 // Description
 .description {
-  width: 142px;
+  min-width: 142px;
 
   @media (min-width: $tablet-width) {
     width: 252px;
@@ -60,10 +60,14 @@
   line-height: 16px;
 
   &:not(:last-child) {
-    margin-bottom: 6px;
-
     @media (min-width: $tablet-width) {
       margin-bottom: 5px;
+    }
+  }
+
+  &:first-child {
+    .description__value {
+      padding-right: 5px;
     }
   }
 
@@ -78,4 +82,8 @@
   @media (min-width: $tablet-width) {
     margin-left: 48px;
   }
+}
+
+.description__text {
+  margin-top: 8px;
 }

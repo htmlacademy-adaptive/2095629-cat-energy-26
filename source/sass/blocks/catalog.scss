@@ -28,8 +28,13 @@
 }
 
 .catalog__product {
-  margin-bottom: 25px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
+  min-height: 209px;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
