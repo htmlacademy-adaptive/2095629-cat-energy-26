@@ -47,14 +47,15 @@
   }
 
   &--addition-product {
+    box-sizing: border-box;
+    min-height: 130px;
     display: flex;
     flex-direction: column;
-    padding-top: 13px;
-    padding-bottom: 0;
-    margin-bottom: 19px;
+    padding-bottom: 18px;
 
     .product-card__title {
       width: auto;
+      margin-top: 13px;
       color: $secondaryGrayColor;
       text-transform: uppercase;
       line-height: 16px;

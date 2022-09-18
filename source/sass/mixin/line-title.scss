@@ -2,8 +2,8 @@
   &::after {
     position: absolute;
     content: "";
-    left: calc(100% + 30px);
-    top: 50%;
+    left: calc(100% + 22px);
+    top: 15px;
     width: 1000%;
     height: 2px;
     background-color: $greenColor;
