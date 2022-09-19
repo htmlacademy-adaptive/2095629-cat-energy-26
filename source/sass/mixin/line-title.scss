@@ -7,6 +7,11 @@
     width: 1000%;
     height: 2px;
     background-color: $greenColor;
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+      left: calc(100% + 37px);
+    }
   }
 
 
@@ -14,8 +19,8 @@
     @media (min-width: $tablet-width) {
       position: absolute;
       content: "";
-      right: calc(100% + 37px);
-      top: 50%;
+      right: calc(100% + 36px);
+      top: 22px;
       width: 1000%;
       height: 2px;
       background-color: $greenColor;
