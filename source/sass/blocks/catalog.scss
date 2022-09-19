@@ -61,12 +61,12 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 245px;
-    padding-left: 33px;
+    padding-left: 35px;
     padding-right: 32px;
+
+    &:not(:last-child)::after {
+      width: 245px;
+    }
   }
 
   &--more-product {

@@ -11,6 +11,10 @@
     width: $tablet-width;
     margin-top: 25px;
     margin-bottom: 63px;
+
+    &--catalog {
+      margin-bottom: 77px;
+    }
   }
 
   @media (min-width: $desktop-width) {
