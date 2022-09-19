@@ -87,18 +87,13 @@
     @media (min-width: $tablet-width) {
       box-sizing: border-box;
       width: 708px;
-      min-height: 138px;
+      min-height: 139px;
       padding-top: 28px;
       padding-left: 37px;
       padding-right: 38px;
       flex-direction: row;
       flex-wrap: wrap;
       align-items: flex-start;
-      // border-bottom: solid 1px #cdcdcd;
-
-      &:not(:last-child) {
-        min-height: 139px;
-      }
 
       .product-card__title {
         margin: 0;
@@ -108,10 +103,11 @@
     @media (min-width: $desktop-width) {
       width: 896px;
       box-sizing: border-box;
-      height: 73px;
+      min-height: 46px;
       padding: 0;
       margin-bottom: 0;
       padding-top: 15px;
+      padding-bottom: 15px;
       flex-wrap: nowrap;
       flex-direction: row;
       justify-content: space-between;

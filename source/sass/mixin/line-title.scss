@@ -12,6 +12,10 @@
       top: 22px;
       left: calc(100% + 37px);
     }
+
+    @media (min-width: $desktop-width) {
+      left: calc(100% + 35px);
+    }
   }
 
 
@@ -27,7 +31,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      right: calc(100% + 36px);
+      right: calc(100% + 40px);
     }
   }
 }
