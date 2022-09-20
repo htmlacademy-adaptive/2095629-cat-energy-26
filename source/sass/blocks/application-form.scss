@@ -3,7 +3,7 @@
   width: 320px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 58px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     width: 628px;
@@ -31,7 +31,7 @@
 
 .application-form__contact-details {
   padding: 0 20px;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -53,8 +53,8 @@
 }
 
 .application-form__addition {
-  padding: 0 20px;
-  margin-bottom: 32px;
+  padding: 0 18px;
+  margin-bottom: 25px;
   border: 0;
 }
 
