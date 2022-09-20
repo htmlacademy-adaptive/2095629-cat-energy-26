@@ -2,11 +2,20 @@
   &::after {
     position: absolute;
     content: "";
-    left: calc(100% + 30px);
-    top: 50%;
+    left: calc(100% + 22px);
+    top: 15px;
     width: 1000%;
     height: 2px;
     background-color: $greenColor;
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+      left: calc(100% + 37px);
+    }
+
+    @media (min-width: $desktop-width) {
+      left: calc(100% + 35px);
+    }
   }
 
 
@@ -14,15 +23,15 @@
     @media (min-width: $tablet-width) {
       position: absolute;
       content: "";
-      right: calc(100% + 37px);
-      top: 50%;
+      right: calc(100% + 36px);
+      top: 22px;
       width: 1000%;
       height: 2px;
       background-color: $greenColor;
     }
 
     @media (min-width: $desktop-width) {
-      right: calc(100% + 36px);
+      right: calc(100% + 40px);
     }
   }
 }

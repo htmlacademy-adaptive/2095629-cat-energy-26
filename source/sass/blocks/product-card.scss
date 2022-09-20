@@ -1,15 +1,17 @@
 // Product card
 .product-card {
   display: grid;
-  padding-top: 11px;
   grid-template-columns: 140px 140px;
-  padding-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 33px;
+
+    picture {
+      display: block;
+      height: 210px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -17,51 +19,78 @@
   }
 
   &--show-more {
+    padding-top: 24px;
     display: flex;
     flex-direction: column;
     text-align: center;
 
-    @media (min-width: $tablet-width) {
-      padding: 0;
-      margin-bottom: 70px;
-    }
-
     .product-card__title {
+      margin-top: 24px;
+      margin-bottom: 7px;
       width: auto;
       color: #111111;
-      margin-bottom: 0;
-
-      @media (min-width: $tablet-width) {
-        line-height: 1.1;
-        width: 134px;
-        margin-bottom: 23px;
-      }
     }
 
     .product-card__description {
-      @media (min-width: $tablet-width) {
-        width: 180px;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      margin-left: auto;
+      margin-right: auto;
+
+      .product-card__title {
+        margin-top: 47px;
+        margin-bottom: 21px;
+      }
+
+      .product-card__description {
+        margin-left: -23px;
+        margin-bottom: 0;
+        width: 184px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      line-height: 1.1;
+      width: 134px;
+      margin-bottom: 23px;
+
+      .product-card__title {
+        margin-bottom: 23px;
       }
     }
   }
 
   &--addition-product {
+    box-sizing: border-box;
+    min-height: 130px;
     display: flex;
     flex-direction: column;
-    padding-top: 13px;
-    padding-bottom: 0;
-    margin-bottom: 19px;
+    border-top: 1px solid #cdcdcd;
+    padding-bottom: 18px;
+
+    &:last-child {
+      padding-bottom: 17px;
+      border-bottom: 1px solid #cdcdcd;
+    }
 
     .product-card__title {
       width: auto;
+      margin-top: 13px;
       color: $secondaryGrayColor;
       text-transform: uppercase;
       line-height: 16px;
     }
 
     @media (min-width: $tablet-width) {
-      width: 632px;
-      padding: 28px 38px;
+      box-sizing: border-box;
+      width: 708px;
+      min-height: 139px;
+      padding-top: 28px;
+      padding-left: 37px;
+      padding-right: 38px;
       flex-direction: row;
       flex-wrap: wrap;
       align-items: flex-start;
@@ -74,10 +103,11 @@
     @media (min-width: $desktop-width) {
       width: 896px;
       box-sizing: border-box;
-      height: 73px;
+      min-height: 46px;
       padding: 0;
       margin-bottom: 0;
       padding-top: 15px;
+      padding-bottom: 15px;
       flex-wrap: nowrap;
       flex-direction: row;
       justify-content: space-between;
@@ -86,27 +116,40 @@
 }
 
 .product-card__image {
-  margin-top: 33px;
+  margin-top: 46px;
   padding: 0 36px;
 
   &--thousand {
     padding: 0 28px;
+    margin-top: 30px;
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 34px;
+    margin-top: 36px;
     width: 161px;
-    height: auto;
+    height: 172px;
 
     &--thousand {
+      margin-top: 9px;
       width: 168px;
+      height: 206px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 29px;
+
+    &--thousand {
+      width: 172px;
+      height: 202px;
+      margin-top: -1px;
     }
   }
 
 
   &--show-more {
+    margin: 0;
     align-self: center;
-    margin-bottom: 23px;
     cursor: pointer;
     width: 30px;
     height: 30px;
@@ -114,7 +157,7 @@
     @media (min-width: $tablet-width) {
       width: 60px;
       height: 60px;
-      margin-bottom: 49px;
+      padding-left: 39px;
     }
   }
 }
@@ -122,29 +165,35 @@
 .product-card__description {
   @media (min-width: $desktop-width) {
     margin-left: auto;
-    margin-right: 20px;
   }
 }
 
 
 .product-card__title {
   width: 78px;
-  margin-top: 0;
-  margin-bottom: 18px;
+  margin-top: 20px;
+  margin-bottom: 14px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
   color: $secondaryGrayColor;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     text-align: center;
+    margin-top: 32px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 21px;
     width: 130px;
     font-size: 20px;
     line-height: 1.2;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 22px;
+    margin-bottom: 25px;
   }
 }
 
@@ -156,7 +205,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    margin-bottom: 25px;
+    margin-bottom: 2px;
   }
 
   @media (min-width: $desktop-width) {

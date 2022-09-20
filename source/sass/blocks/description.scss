@@ -1,13 +1,16 @@
 // Description
 .description {
-  width: 142px;
+  min-width: 142px;
 
   @media (min-width: $tablet-width) {
     width: 252px;
   }
 
   @media (min-width: $desktop-width) {
+    box-sizing: border-box;
     width: 180px;
+    padding-left: 4px;
+    padding-right: 5px;
   }
 
   &--show-more {
@@ -17,6 +20,10 @@
     line-height: 16px;
     margin-left: auto;
     margin-right: auto;
+
+    .description__text {
+      margin: 0;
+    }
 
     @media (min-width: $tablet-width) {
       font-size: 16px;
@@ -34,11 +41,18 @@
     font-family: "Arial", sans-serif;
     font-size: 14px;
     line-height: 1;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
 
     @media (min-width: $tablet-width) {
       width: auto;
-      // margin-left: auto;
+      font-size: 16px;
+      line-height: 1.25;
+      padding-top: 2px;
+      margin-right: -5px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 295px;
     }
   }
 }
@@ -47,6 +61,10 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .description__item {
@@ -59,23 +77,37 @@
   font-size: 12px;
   line-height: 16px;
 
-  &:not(:last-child) {
-    margin-bottom: 6px;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 5px;
+  &:first-child {
+    .description__value {
+      padding-right: 5px;
     }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    padding-bottom: 9px;
+    padding-bottom: 8px;
     border-bottom: solid 1px #cdcdcd;
+
+    &:not(:last-child) {
+      margin-bottom: 7px;
+    }
   }
 }
 
 .description__price {
+  padding-right: 8px;
+
   @media (min-width: $tablet-width) {
     margin-left: 48px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 43px;
+    margin-left: 0;
+    padding-right: 0;
+  }
+}
+
+.description__text {
+  margin-top: 8px;
 }

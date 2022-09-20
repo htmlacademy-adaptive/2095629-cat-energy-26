@@ -15,7 +15,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 221px 221px;
-    row-gap: 32px;
+    row-gap: 25px;
     column-gap: 123px;
   }
 
@@ -30,11 +30,19 @@
   min-height: 40px;
 
   &:not(:last-child) {
-    margin-bottom: 12px;
+    margin-bottom: 2px;
   }
 }
 
 .checkbox-buttons__control {
-  padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.checkbox-buttons__label {
+  padding-left: 46px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 59px;
+    margin-top: 6px;
+  }
 }

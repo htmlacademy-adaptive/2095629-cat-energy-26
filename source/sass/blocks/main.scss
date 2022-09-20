@@ -2,6 +2,7 @@
 .main {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .main__container {
@@ -41,8 +42,11 @@
 }
 
 .main__gift {
-  margin-top: 35px;
-  margin-bottom: 62px;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 77px;
+  }
 
   @media (min-width: $desktop-width) {
     margin: 0;

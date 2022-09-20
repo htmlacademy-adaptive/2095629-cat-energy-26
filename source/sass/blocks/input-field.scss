@@ -1,4 +1,3 @@
-
 .input-field {
   display: flex;
   position: relative;
@@ -18,7 +17,7 @@
   box-sizing: border-box;
   margin-top: auto;
 
-  margin-right: 13px;
+  margin-right: 15px;
   margin-bottom: auto;
   white-space: nowrap;
   height: 18px;
@@ -27,7 +26,16 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-right: 10px;
+    margin-top: 10px;
+    margin-right: 19px;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 1.5;
+
+
+    // &--program-selection  {
+
+    // }
   }
 
   @media (min-width: deskot-width) {
@@ -46,5 +54,17 @@
 
   &--tel {
     top: 14px;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: 18px;
+
+    &--email {
+      top: 18px;
+    }
+
+    &--tel {
+      top: 16px;
+    }
   }
 }

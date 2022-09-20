@@ -4,11 +4,11 @@
 
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
-    width: 628px;
+    width: 630px;
     padding-top: 25px;
-    padding-left: 28px;
+    padding-left: 27px;
     padding-right: 37px;
-    padding-bottom: 25px;
+    padding-bottom: 23px;
     border: solid 1px #e7e7e7;
   }
 
@@ -27,7 +27,19 @@
   min-height: 30px;
   margin-bottom: 13px;
 
+  // @media (min-width: $tablet-width) {
+  //   margin-bottom: 22px;
+  // }
+
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.radio-buttons__control {
+  padding-left: 46px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
   }
 }
