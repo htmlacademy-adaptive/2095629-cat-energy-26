@@ -18,6 +18,10 @@
 .comment__label {
   margin-bottom: 38px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
 }
 
 .comment__title {

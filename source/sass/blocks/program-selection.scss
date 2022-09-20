@@ -2,11 +2,9 @@
 .program-selection {
   border: none;
   width: 320px;
-  margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
-    width: 628px;
-    margin-bottom: 71px;
+    width: 632px;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,7 +26,9 @@
   border-bottom: solid 1px #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 72px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 78px;
     border-bottom: 0;
   }
 
@@ -41,7 +41,7 @@
   margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 26px;
   }
 }
 

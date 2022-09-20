@@ -5,6 +5,8 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-left: 3px;
     max-width: 565px;
     flex-direction: row;
     align-items: baseline;
@@ -24,7 +26,9 @@
   margin-left: 5px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 61px;
+    margin-top: -3px;
+    margin-left: 63px;
+    font-size: 16px;
   }
 
   @media (min-width: $desktop-width) {

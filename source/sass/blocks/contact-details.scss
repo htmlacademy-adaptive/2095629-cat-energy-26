@@ -16,6 +16,10 @@
 
 .contact-details__input-field:not(:last-child) {
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+  }
 }
 
 .contact-details__inputs {
@@ -26,6 +30,12 @@
     margin-right: 11px;
   }
 
+  @media (min-width: $tablet-width) {
+    .input-field__label {
+      margin-left: 2px;
+      margin-right: 0;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -37,6 +47,10 @@
 .contact-details__label {
   margin-bottom: 9px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+  }
 }
 
 .contact-details__title {
@@ -56,7 +70,11 @@
     max-width: 628px;
 
     br {
-      display: none;
+      content: " ";
+
+      &::after {
+        content: " ";
+      }
     }
   }
 }
