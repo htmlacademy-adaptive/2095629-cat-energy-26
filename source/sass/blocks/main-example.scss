@@ -1,23 +1,19 @@
 // Main Example
 .main-example {
   position: relative;
-  width: 320px;
+  width: 100%;
   padding-top: 25px;
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
     padding-top: 43px;
     padding-bottom: 101px;
     border-top: solid 1px  #e6e6e6;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
     padding-top: 0;
     padding-bottom: 74px;
-    display: flex;
-    flex-direction: row;
     border-top: 0;
   }
 
@@ -43,12 +39,37 @@
   }
 }
 
+.main-example__content {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .main-example__statistics {
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .main-example__slider {
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
